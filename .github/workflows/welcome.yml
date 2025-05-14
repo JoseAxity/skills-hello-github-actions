@@ -1,2 +1,6 @@
 name: Post welcome comment
-on: workflow_dispatch
+on:
+  pull_request:
+    types: [opened]
+permissions:
+  pull-requests: write
